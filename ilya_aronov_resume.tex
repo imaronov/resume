@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ilya Aronov
+% License : MIT
+% February 7th, 2024
+%------------------------
+
+\pdfinfo
+{
+   /Author (Ilya M. Aronov)
+   /Title  (Full Stack Developer)
+   /Subject (Resume - Curriculum Vitae)
+   /Keywords (Information; Engineering; Development; Software; Linux)
+}
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-5pt}
+}
+
+\newcommand*{\resumeSubheadingItem}[2]{
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/ilya-aronov-b488a965/}{\Large Ilya Aronov}} & Phone: 617-888-5986 \\
+  \href{https://www.linkedin.com/in/ilya-aronov-b488a965/}{Full Stack Developer} & Email: \href{mailto: ilya.aronov@gmail.com}{ilya.aronov@gmail.com}\\
+
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Coastal Carolina University}{Conway, SC}
+      {Bachelor of Science in Information Systems}{May 2015}
+
+      \resumeSubheadingItem
+      {Minor in Computer Science}{}
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {JPMorgan Chase}{Tampa, FL}
+      {Full Stack Developer}{March 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Software Development}
+          {Build scalable and performant front-end components in React using TypeScript with Test Driven Development (TDD).
+          Implemented backend functionality using Java / Spring Boot microservices.
+          Wrote testable code built for scalability, reliability and resilience.
+          Deployed services to Kubernetes clusters.
+          Provided L3 support to debug and resolve critical production issues.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Infosys (Verizon)}{Tampa, FL}
+      {System Engineer}{January 2017 - February 2022}
+      \resumeItemListStart
+        \resumeItem{Software Development}
+          {Architect and developed tools for the organization with the use of micro services.
+          Developed re-usable modules, frameworks, and components for scalable Enterprise quality solutions in AWS and OCI.
+          Developed complex SQL queries, stored procedures, and functions.
+          Developed, maintained, and supported Continuous Integration (CICD) framework based on Jenkins.
+          Developed and automated daily, hourly, and on-demand reporting for business-critical applications across the organization.
+          Developed SLACK Chatbot for managing teams, tickets, and reporting.}
+
+          \resumeItem{Administrative}{Investigated tools, technologies, and new processes to make improvements to existing automation.
+          Initiated and troubleshoot Continuous Delivery builds in Jenkins.
+          Setup monitoring and logging tools.
+          Involved in hiring process.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Verizon}{Tampa, FL}
+      {Production Support}{June 2014 - January 2017}
+      \resumeItemListStart
+        \resumeItem{Support}
+          {Supported monthly production billing to ensure SLAs were met.
+          Managed team meeting for tracking existing issues.
+          Diagnosed and drove production billing issues to resolution.
+          Applied hotfixes in production.
+          Provided technical support to other groups relating to production issues.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Coastal Carolina University}{Conway, SC}
+      {Teaching Assistant / Tutor}{September 2012 - December 2014}
+      \resumeItemListStart
+        \resumeItem{Assistant}
+          {Tutored Java, C/C++, Assembly, PHP, MySQL.
+          Graded tests, lab work, and in-class assignments.
+          Taught class material during professor absence.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    
+    \resumeSubItem{A.U.R.A.}
+    {Application dedicated to running health, vulnerability, and resiliency checks for production applications.
+    Delivered areas of focus for improving business stability.}
+
+    \resumeSubItem{Unity}
+    {Case management across Front, Middle, and Back Office.
+    Client Relationship Management (CRM).
+    Client onboarding, servicing, and management.
+    Account maintenance, transaction repair, and exception management.}
+    
+    \resumeSubItem{Navigator}
+    {UI browser application for interacting with the Unity platform for searching, tracking, and resolving payments cases}
+    
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    
+      \resumeSubItem{Programming Languages}
+      {JavaScript, TypeScript, React, Java, HTML, CSS, SQL, Python, Bash}
+    
+      \resumeSubItem{Information Technologies}
+      {Linux, Unix,
+      Cloud, AWS, EC2, RDS,
+      Spring, Node.js, npm, Maven,
+      React, Angular, JavaScript, TypeScript, JSX, Redux,
+      HTML, CSS,
+      RDB, MySQL, Oracle SQL, Cassandra, PostgreSQL, JPA/Hibernate,
+      Git, SSH, VPN,
+      SOAP, RESTful APIs, JSON,
+      JUnit, Jest, Selenium,
+      Jira, Jenkins, Jules, Docker, Kubernetes,
+      Splunk, Elasticsearch}
+
+      \resumeSubItem{Application Development}
+      {SCRUM, Agile, SDLC, CI/CD, OOP, Inheritance, Interfaces, Abstraction, Encapsulation, Polymorphism}
+
+  \resumeSubHeadingListEnd
+
+%--------CERTIFICATIONS------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{AWS Certified Cloud Practitioner}
+      {\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/TG78JJ42WNQ41G35}{TG78JJ42WNQ41G35}} - {{April 2026}}
+  \resumeSubHeadingListEnd
+
+%--------ORGANIZATIONS------------
+\section{Organizations}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{Order of Omega}
+      {Leadership Honor Society}
+
+    \resumeSubItem{Upsilon Pi Epsilon}
+      {International Honor Society for the Computing and Information Disciplines}
+
+  \resumeSubHeadingListEnd
+
+%---------BAGDES------------
+    % \includegraphics[scale=0.1]{CompTIA_A_Plus.png}
+    % \includegraphics[scale=0.055]{Google_IT_Support_Specialist.png}
+    % \includegraphics[scale=0.1]{CompTIA_IT_Fundamentals.png}
+%-------------------------------------------
+\end{document}
