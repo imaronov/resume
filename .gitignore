@@ -1,6 +1,6 @@
 *.log
 *.aux
-*.png
+# *.png
 *.fdb_latexmk
 *.fls
 *.gz
