@@ -1,0 +1,143 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ilya Aronov
+% License : MIT
+% February 28th, 2024
+%------------------------
+
+\pdfinfo
+{
+   /Author (Ilya M. Aronov)
+   /Title  (Full Stack Developer)
+   /Subject (Cover Letter)
+   /Keywords (Information; Engineering; Development; Software; Linux; SDLC; SCRUM; Agaile; OOP; RESTful)
+}
+
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\graphicspath{ {../images/} }
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\myemail{ilya.aronov@gmail.com}
+\def\myname{Ilya Aronov}
+\def\mylinkedin{ilya-aronov-b488a965}
+\def\portfolio{https://imaronov.github.io/}
+\def\myphone{(617)888-5986}
+\def\mylocation{Riverview, FL}
+\def\mytitle{Full Stack Developer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Company Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\hiringManager{Hiring Manager}
+\def\companyName{Beoing}
+\def\companyAddress{company address}
+\def\companyCity{City, State, Zip}
+\def\companyMission{misstion statement}
+
+\def\previousCompany{JPMorgan Chase}
+\def\companySkills{JavaScript, TypeScript, Java, React, and Spring}
+
+%-------------------------
+% Custom commands
+\newcommand{\addressHeading}[4]{
+    {#1}\\
+    {#2}\\
+    {#3}\\
+    {#4}\\
+}
+
+\newcommand{\greeting}{
+    \vspace{-0.1in}Dear \hiringManager,
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+\color{gr}
+\AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+%-------------------------
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape \myname}
+
+\fontsize{10}{0}\selectfont\scshape \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+% \fontsize{10}{0}\selectfont\scshape \href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace linkedin.com/in/\mylinkedin}\hfill
+\fontsize{10}{0}\selectfont\scshape \href{\portfolio}{\faUser\enspace portfolio}\hfill
+\fontsize{10}{0}\selectfont\scshape \href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+\fontsize{10}{0}\selectfont\scshape \faMapMarker\enspace \mylocation
+\end{center}
+
+%-------------------------
+% Body
+\vspace{0.2in}
+
+% Opening block
+\today
+\\ \\
+\addressHeading{\hiringManager}{\companyName}{\companyAddress}{\companyCity}
+
+\greeting
+
+% Body
+I am writing to express my interest in the Software Developer position at \companyName.
+With a strong foundation in software development and a passion for leveraging technology to solve complex problems,
+I am excited about the opportunity to contribute to your team and help drive innovation at \companyName.
+
+Throughout my career, I have developed a comprehensive skill set encompassing various programming languages, frameworks, and development methodologies.
+I am proficient in technologies such as \companySkills, with hands-on experience in building scalable and efficient software solutions.
+My expertise extends to both frontend and backend development, as well as database management and system architecture design.
+
+In my previous roles, I have demonstrated my ability to deliver high-quality software products that meet and exceed client expectations.
+Whether collaborating with cross-functional teams to define project requirements or working independently to troubleshoot and debug code,
+I am committed to delivering solutions that are not only technically sound but also user-friendly and intuitive.
+
+One of my proudest accomplishments was leading the development of a mission-critical application for \previousCompany.
+By leveraging agile methodologies and incorporating user feedback throughout the development process, we were able to deliver a product that significantly improved operational efficiency and customer satisfaction.
+This experience taught me the importance of effective communication, collaboration, and adaptability in achieving project success.
+
+Thank you for considering my application. I am excited about the opportunity to join the talented team at \companyName and contribute to its mission of \companyMission.
+Please find my resume attached for your review, and feel free to contact me to schedule a discussion.
+
+% Thank you,\\
+% \myname
+% \noindent\input{body}
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+% \closer,
+
+\vspace{-0.1in}
+Thank you, \\
+\myname\\
+
+% \includegraphics[width=1.5in]{signiture.png}
+\includegraphics[width=1.5in]{signiture_no_background.png}
+
+\vspace{-0.1in}
+\mytitle
+
+\end{flushright}
+
+\end{document}
