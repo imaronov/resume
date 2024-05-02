@@ -25,8 +25,6 @@
                 Full Stack;
                 Kubernetes)
 }
-
-
 \documentclass[letterpaper,]{article}
 
 \usepackage{latexsym}
@@ -43,7 +41,9 @@
 \usepackage[bottom]{footmisc}
 
 \usepackage{graphicx}
-\graphicspath{ {../images/} }
+
+\input{../assets/variables.tex}
+\graphicspath{ {../assets/images/} }
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -107,8 +107,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://imaronov.github.io/}{\Large Ilya Aronov}} & Phone: 617-888-5986 \\
-  \href{https://www.linkedin.com/in/ilya-aronov-b488a965/}{Full Stack Developer} & Email: \href{mailto: ilya.aronov@gmail.com}{ilya.aronov@gmail.com}\\
+  \textbf{\href{\portfolio}{\Large \myname}} & Phone: \myphone \\
+  \href{https://linkedin.com/in/\mylinkedin}{\mytitle} & Email: \href{mailto: \myemail}{\myemail}\\
 
 \end{tabular*}
  
