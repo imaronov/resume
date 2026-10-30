@@ -5,29 +5,6 @@
 % February 7th, 2024
 %------------------------
 
-\pdfinfo
-{
-   /Author (Ilya M. Aronov)
-   /Title  (Full Stack Developer)
-   /Subject (Resume - Curriculum Vitae)
-   /Keywords (TSSCI;
-                Defence;
-                Aerosapce;
-                STEM;
-                Information;
-                Engineering;
-                Development;
-                Software;
-                Linux;
-                SDLC;
-                SCRUM;
-                Agile;
-                OOP;
-                RESTful;
-                microservices;
-                Full Stack;
-                Kubernetes)
-}
 \documentclass[letterpaper,]{article}
 
 \usepackage{latexsym}
@@ -38,6 +15,12 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Full Stack Software Developer Resume},
+  pdfauthor={Ilya M. Aronov},
+  pdfsubject={Resume - Curriculum Vitae},
+  pdfkeywords={Full Stack Software Developer, React, TypeScript, Java, Spring Boot, Python, Aerospace, Defense, CI/CD, Agile}
+}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 
@@ -110,21 +93,20 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{\portfolio}{\Large \myname}} & Phone: \myphone \\
-  \href{https://linkedin.com/in/\mylinkedin}{\mytitle} & Email: \href{mailto: \myemail}{\myemail}\\
+  \textbf{\Large \myname} & Phone: \myphone \\
+  \href{https://linkedin.com/in/\mylinkedin}{LinkedIn} & Email: \href{mailto:\myemail}{\myemail}\\
 
 \end{tabular*}
+\begin{center}
+  \textbf{Full Stack Software Developer} 
+  \ifshowclearance
+  \hspace{0.5em}\textbar\hspace{0.5em} DoD Top Secret (TS) Clearance
+  \fi
+\end{center}
  
 %-----------SUMMARY-------------------
-% \section{Summary}
-%     Full stack developer with a vast array of knowledge in many frontend and backend technologies, responsive frameworks, databases, and best code practices.
-%     My objective is simply to be the best developer that I can be. I am dedicated to perfecting my craft by learning from more experienced engineers and expanding my skillset with new technologies and frameworks.
-
-% \section{Career objective}
-% To leverage my passion for coding and problem-solving skills in a dynamic software development environment. Seeking opportunities to contribute to innovative 
-% projects, collaborate with talented teams, and continuously enhance my expertise in cutting-edge technologies while delivering high-quality, scalable solutions 
-% that positively impact end-users.
-
+\section{Summary}
+Full Stack Software Developer with experience delivering user-facing applications, backend services, and automation across aerospace and defense, financial services, and telecommunications. Builds with React, TypeScript, Java/Spring Boot, and Python, including Python applications built with Qt Designer. Brings additional experience writing software requirements, integrating and testing mission-critical systems, and leading DevOps work to maintain CI/CD pipelines. Holds a DoD Top Secret (TS) Clearance.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -132,69 +114,44 @@
 
    \resumeSubheading
       {Collins Aerospace}{Largo, FL}
-      {Software Engineer}{June 3, 2024 - Present}
+      {Software Engineer}{June 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Software Development}
-          {Led design, development, testing, and integration of enterprise-scale software systems supporting mission-critical aerospace and defense applications, driving full lifecycle delivery with high quality and reliability.
-          Collaborated with systems engineers and product managers to define architectural standards, UI/backend interfaces, and deployment strategies that met stringent operational requirements.
-          Mentored and guided engineering team members, championing best practices in Agile software development and code quality.
-          Influenced architecture decisions and contributed to process improvements that enhanced stability, scalability, and security of deployed systems.
-          }
+        \resumeItem{Software Development}{Developed, tested, and integrated real-time software for mission-critical aerospace and defense applications across the lifecycle, from design through maintenance. Wrote and refined software requirements for mission-critical systems.}
+        \resumeItem{Python Applications}{Developed multiple Python UI applications in parallel using Qt Designer, working with multiple customers to tailor each application to its use cases. Collaborated with software and systems engineers to resolve integration issues, tested software with hardware or simulators, debugged defects, and verified fixes.}
+        \resumeItem{CloudStack Administration}{Managed an Apache CloudStack environment in an air-gapped network, administering virtual machine instances and images.}
+        \resumeItem{DevOps and Secure Development}{Led the DevOps team in maintaining CI/CD pipelines and build workflows for multiple applications developed in multiple programming languages. Performed development work in a Sensitive Compartmented Information Facility (SCIF), following applicable security procedures. Contributed to Agile development, code reviews, and Git-based version control for new and legacy programs.}
       \resumeItemListEnd
 
    \resumeSubheading
       {JPMorgan Chase}{Tampa, FL}
       {Full Stack Developer}{March 2022 - March 2024}
       \resumeItemListStart
-        \resumeItem{Software Development}
-          {Developed scalable and performant front-end components (MFUs) in React using TypeScript with Test-Driven Development (TDD) methodology.
-          Implemented robust backend functionality using Java / Spring Boot microservices, contributing to the delivery of full stack feature sets.
-          Wrote testable code built for scalability, reliability, and resiliency.
-          Created an admin WYSIWYG utility for efficient file management, streamlining daily tasks.
-          Deployed services to Kubernetes clusters.
-          Reviewed PRs for coding best practices, fostering a high-quality codebase.
-          Provided Level 3 support to debug and resolve critical production issues, minimizing downtime and ensuring uninterrupted service delivery.}
+        \resumeItem{Full-Stack Development}{Developed React and TypeScript front-end components and Java/Spring Boot microservices using test-driven development. Deployed services to Kubernetes and created an administrative WYSIWYG tool to streamline file management. Reviewed pull requests and provided Level 3 production support, diagnosing and resolving critical issues.}
       \resumeItemListEnd
- 
+
     \resumeSubheading
       {Infosys (Verizon)}{Tampa, FL}
       {System Engineer}{January 2017 - February 2022}
       \resumeItemListStart
-        \resumeItem{Software Development}
-          {Designed and developed microservices-based tools, modules, and frameworks for scalable solutions in AWS and OCI environments.
-          Created complex SQL queries, stored procedures, and functions to support database operations.
-          Developed and maintained Continuous Integration/Continuous Deployment (CI/CD) framework using Jenkins.
-          Automated daily, hourly, and on-demand reporting for critical applications, enhancing operational efficiency.
-          Developed a SLACK Chatbot for team management, ticket handling, and reporting.
-          }
-
-          \resumeItem{Administrative}{Investigated and implemented tools, technologies, and processes to improve automation and efficiency.
-          Initiated and troubleshooted Continuous Delivery builds in Jenkins, ensuring smooth deployment processes.
-          Established monitoring and logging tools to track system performance and identify issues promptly.
-          Participated in the hiring process, contributing to team growth and talent acquisition.}
+        \resumeItem{Software and Automation}{Developed microservices-based tools, modules, and frameworks for AWS and OCI environments. Wrote SQL queries, stored procedures, and functions, and maintained Jenkins CI/CD frameworks. Automated recurring reports and developed a Slack chatbot for team coordination, ticket handling, and reporting.}
+        \resumeItem{Operations and Improvement}{Implemented automation, monitoring, and logging improvements; troubleshot Jenkins delivery builds; and contributed to hiring.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Verizon}{Tampa, FL}
       {System Engineer}{June 2014 - January 2017}
       \resumeItemListStart
-        \resumeItem{Support}
-          {Provided essential support for monthly production billing processes, ensuring adherence to Service Level Agreements (SLAs).
-          Conducted SCRUM meetings to track and manage existing issues, fostering a collaborative approach to problem-solving.
-          Diagnosed and resolved production billing issues efficiently, minimizing disruptions and ensuring accurate billing processes.}
+        \resumeItem{Production Support}{Supported monthly production billing processes in line with SLAs. Facilitated Scrum issue-tracking meetings and diagnosed billing problems to minimize disruption and maintain accuracy.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Coastal Carolina University}{Conway, SC}
       {Teaching Assistant / Tutor}{September 2012 - December 2014}
       \resumeItemListStart
-        \resumeItem{Tutoring}
-          {Provided tutoring support for Java and C/C++ programming languages, assisting students in understanding course materials and assignments.
-          Conducted one-on-one tutoring sessions to clarify concepts, troubleshoot coding issues, and improve students' programming skills.}
+        \resumeItem{Programming Tutoring}{Tutored students in Java and C/C++, providing one-on-one help with course concepts, assignments, and debugging.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
 %-----------PROJECTS-----------------
 % \section{Projects}
 %   \resumeSubHeadingListStart
@@ -223,7 +180,7 @@
         NodeJS, npm, Express,
         JavaScript, TypeScript, React, JSX, Redux,
         MVC,
-        Python, Bash Scripting,
+        Python, Qt Designer, Bash scripting,
         C/C++}
 
       \resumeSubItem{Web Development}
@@ -232,13 +189,13 @@
         JSX}
 
       \resumeSubItem{Database Technologies}
-        {RDBMS, SQLServer, MySQL, Oracle SQL, PostgreSQL, GraphQL,
+        {RDBMS, SQL Server, MySQL, Oracle SQL, PostgreSQL, GraphQL,
         NoSQL, Cassandra}
 
       \resumeSubItem{Cloud Services \& Deployment}
         {AWS, EC2, RDS,
-        Docker, Kubernetes, 
-        Jenkins, Jules}
+        Docker, Kubernetes, Apache CloudStack, 
+        Jenkins, CI/CD}
 
       \resumeSubItem{Version Control \& Collaboration}
         {Git,
@@ -247,7 +204,7 @@
 
       \resumeSubItem{Testing \& Quality Assurance}
         {JUnit, Jest,
-        Test Driven Developement}
+        Test-Driven Development}
 
       \resumeSubItem{APIs \& Communication Protocols}
         {SOAP, RESTful APIs, JSON, 
@@ -257,7 +214,7 @@
         {Splunk}
 
       \resumeSubItem{Software Development}
-        {Object-Oriented Design, S.O.L.I.D., TDD, CI/CD, Agile, SDLC, SCRUM}
+        {Object-Oriented Design, S.O.L.I.D., TDD, CI/CD, Agile, SDLC, Scrum}
 
   \resumeSubHeadingListEnd
   

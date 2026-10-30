@@ -5,30 +5,16 @@
 % February 28th, 2024
 %------------------------
 
-\pdfinfo
-{
-   /Author (Ilya M. Aronov)
-   /Title  (Full Stack Developer)
-   /Subject (Cover Letter)
-   /Keywords (STEM;
-                Information;
-                Engineering;
-                Development;
-                Software;
-                Linux;
-                SDLC;
-                SCRUM;
-                Agaile;
-                OOP;
-                RESTful;
-                microservices;
-                Full Stack;
-                Kubernetes)
-}
 \documentclass[11pt]{letter}
 \usepackage[utf8]{inputenc}
 \usepackage[empty]{fullpage}
 \usepackage[hidelinks]{hyperref}
+\hypersetup{
+    pdfauthor={Ilya M. Aronov},
+    pdftitle={Full Stack Developer},
+    pdfsubject={Cover Letter},
+    pdfkeywords={STEM; Information; Engineering; Development; Software; Linux; SDLC; SCRUM; Agile; OOP; RESTful; microservices; Full Stack; Kubernetes}
+}
 \usepackage{graphicx}
 \usepackage{fontawesome5}
 \usepackage{eso-pic}
@@ -73,42 +59,42 @@
     
     \fontsize{\headLinkFontSize}{0}\selectfont\scshape \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
     \fontsize{\headLinkFontSize}{0}\selectfont\scshape \href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace \mylinkedin}\hfill
-    \fontsize{\headLinkFontSize}{0}\selectfont\scshape \href{\portfolio}{\faUser\enspace portfolio}\hfill
+    % \fontsize{\headLinkFontSize}{0}\selectfont\scshape \href{\portfolio}{\faUser\enspace portfolio}\hfill
     \fontsize{\headLinkFontSize}{0}\selectfont\scshape \href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
     \fontsize{\headLinkFontSize}{0}\selectfont\scshape \faMapMarker\enspace \mylocation
 \end{center}
 
 %-------------------------
 % Body
-\vspace{0.2in}
+\vspace{0.5in}
 
-% Opening block
-\today
-\\ \\
-\addressHeading{\hiringManager}{\companyName}{\companyAddress}{\companyCity}
+% Date and recipient address
+\noindent\today\par
+\vspace{0.14in}
+\noindent
+\begin{tabular}{@{}l@{}}
+  \hiringManager\\
+  \companyName\\
+  \companyAddress\\
+  \companyCity
+\end{tabular}
 
-\greeting
+\vspace{0.18in}
+\noindent Dear \hiringManager,\par
+\vspace{0.08in}
 
-% Body
-I am writing to express my interest in the \possitionApplied\, position at \companyName.
-With a strong foundation in software development and a passion for leveraging technology to solve complex problems,
-I am excited about the opportunity to contribute to your team and help drive innovation at \companyName.
+% Letter body
+I am applying for the \positionApplied\ role at \companyName. I bring full-stack software development experience along with hands-on DevOps work supporting CI/CD, cloud deployments, and production systems. I am especially interested in contributing to \companyMission.
 
-Throughout my career, I have developed a comprehensive skill set encompassing various programming languages, frameworks, and development methodologies.
-I am proficient in technologies such as \companySkills, with hands-on experience in building scalable and efficient software solutions.
-My expertise extends to both frontend and backend development, as well as database management and system architecture design.
+At JPMorgan Chase, I developed React and TypeScript front-end components and Java/Spring Boot microservices, deployed services to Kubernetes, and built an administrative tool that streamlined file management. I also provided Level 3 production support, diagnosing and resolving critical issues.
 
-In my previous roles, I have demonstrated my ability to deliver high-quality software products that meet and exceed client expectations.
-Whether collaborating with cross-functional teams to define project requirements or working independently to troubleshoot and debug code,
-I am committed to delivering solutions that are not only technically sound but also user-friendly and intuitive.
+In my current role at Collins Aerospace, I develop and test software for mission-critical aerospace and defense applications. I write software requirements, build Python UI applications with Qt Designer for distinct customer use cases, and lead a DevOps team maintaining CI/CD pipelines and build workflows for applications written in multiple languages. I also manage CloudStack instances and images in an air-gapped network. My experience with \companySkills supports the reliability and delivery needs of this role.
 
-One of my proudest accomplishments was leading the development of a mission-critical application for \previousCompany.
-By leveraging agile methodologies and incorporating user feedback throughout the development process, we were able to deliver a product that significantly improved operational efficiency and customer satisfaction.
-This experience taught me the importance of effective communication, collaboration, and adaptability in achieving project success.
+I would welcome the opportunity to discuss how my full-stack and DevOps experience could contribute to \companyName. Thank you for your consideration.
 
-Thank you for considering my application. I am excited about the opportunity to join the talented team at \companyName\, and contribute to its mission \companyMission.
-Please find my resume attached for your review, and feel free to contact me to schedule a discussion.
-
+\ifshowclearance
+I hold an active DoD Top Secret (TS) clearance and bring experience developing software in secure, mission-critical environments.
+\fi
 % Thank you,\\
 % \myname
 % \noindent\input{body}
